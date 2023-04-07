@@ -1,0 +1,17 @@
+{
+  "editor.rulers": [
+    100
+  ],
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  // It can be useful to disable this setting if trailing whitespaces have a use case.
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "editor.renderFinalNewline": "dimmed",
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "[markdown]": {
+    // Markdown utilizes trailing whitespace to indicate a line break.
+    "files.trimTrailingWhitespace": false,
+  }
+}
