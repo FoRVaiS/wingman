@@ -1,0 +1,9 @@
+[submodule "api"]
+	path = packages/api
+	url = git@github.com:forvais/wingman-api
+[submodule "scraper"]
+	path = packages/scraper
+	url = git@github.com:forvais/wingman-scraper
+[submodule "ui"]
+	path = packages/ui
+	url = git@github.com:forvais/wingman-ui
