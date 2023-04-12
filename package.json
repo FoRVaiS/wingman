@@ -1,0 +1,13 @@
+{
+  "name": "wingman",
+  "description": "Wingman is a Twitter clone and middleman service that aims to provide users with a similar experience to the official Twitter platform while giving them more control over their data and interactions.",
+  "version": "0.0.0",
+  "scripts": {
+    "install": "./scripts/propagate.sh npm install",
+    "lint": "./scripts/propagate.sh npm run lint",
+    "lint:all": "./scripts/propagate.sh npm run lint:all",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "./scripts/propagate.sh npm run test:unit",
+    "test:e2e": "./scripts/propagate.sh npm run test:e2e"
+  }
+}
