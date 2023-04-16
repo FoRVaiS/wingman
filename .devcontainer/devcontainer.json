@@ -1,0 +1,22 @@
+{
+  "name": "wingman-dev-container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "wingman-dev-container",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "visualstudioexptteam.vscodeintellicode",
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens",
+        "github.copilot",
+        "dbaeumer.vscode-eslint",
+        "rangav.vscode-thunder-client",
+        "ms-vscode.vscode-js-profile-flame",
+        "wallabyjs.quokka-vscode@1.0.261",
+        "orta.vscode-jest@5.2.0"
+      ]
+    }
+  },
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}
