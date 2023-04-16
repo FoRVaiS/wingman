@@ -18,6 +18,8 @@ USER ${USER}
 
 
 FROM base as dev
+ENV NODE_ENV=development
+RUN npm install
 
 
 FROM dev as dev-container
