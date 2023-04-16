@@ -26,6 +26,8 @@ RUN apt-get update -y \
     && apt-get upgrade -y -qq --no-install-recommends \
     # Support git integration in VSCode.
     git \
+    # Install CLI tools for mongo and redis.
+    mongodb redis-tools \
     # Enable passwordless sudo.
     sudo \
     && usermod -aG sudo ${USER} \
