@@ -29,7 +29,17 @@ services:
     container_name: wingman-dev-container
     volumes:
       - .:/app
+      - node-modules:/app/node_modules
+      - api-node-modules:/app/packages/api/node_modules
+      - scraper-node-modules:/app/packages/scraper/node_modules
+      - ui-node-modules:/app/packages/ui/node_modules
     tty: true
     depends_on:
       - redis
       - mongo
+
+volumes:
+  node-modules:
+  api-node-modules:
+  scraper-node-modules:
+  ui-node-modules:

@@ -16,6 +16,10 @@ RUN groupadd --gid 1000 ${USER} \
 WORKDIR ${WORKSPACE}
 USER ${USER}
 
+# Copy the files required to install dependencies.
+COPY --chown=${USER}:${USER} package*.json ./
+COPY --chown=${USER}:${USER} scripts/propagate.sh ./scripts/
+
 
 FROM base as dev
 ENV NODE_ENV=development
