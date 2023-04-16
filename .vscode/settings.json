@@ -13,5 +13,18 @@
   "[markdown]": {
     // Markdown utilizes trailing whitespace to indicate a line break.
     "files.trimTrailingWhitespace": false,
-  }
+  },
+  "eslint.format.enable": true,
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+  ],
+  "eslint.run": "onSave",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "jest.autoRevealOutput": "off"
 }
