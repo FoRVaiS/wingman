@@ -2,11 +2,20 @@
   "name": "wingman",
   "description": "Wingman is a Twitter clone and middleman service that aims to provide users with a similar experience to the official Twitter platform while giving them more control over their data and interactions.",
   "version": "0.0.0",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog",
+      "maxHeaderWidth": 72,
+      "maxLineWidth": 72
+    }
+  },
   "devDependencies": {
     "@forvais/eslint-config-base": "^1.0.0",
     "@forvais/eslint-config-node": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",
     "eslint-plugin-node": "^11.1.0",
     "jest": "^29.5.0",
