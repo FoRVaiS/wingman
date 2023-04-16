@@ -1,4 +1,18 @@
 services:
+  redis:
+    container_name: wingman-redis
+    image: redis:7.0.10-bullseye
+    platform: linux/amd64
+
+  mongo:
+    container_name: wingman-mongo
+    image: mongo:6.0.5-jammy
+    platform: linux/amd64
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+      - MONGO_INITDB_DATABASE=admin
+
   # Development Environment
   wingman-dev-container:
     build:
@@ -10,3 +24,6 @@ services:
     volumes:
       - .:/app
     tty: true
+    depends_on:
+      - redis
+      - mongo
