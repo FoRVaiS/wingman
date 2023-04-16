@@ -1,0 +1,12 @@
+services:
+  # Development Environment
+  wingman-dev-container:
+    build:
+      context: .
+      args:
+        WORKSPACE: '/app'
+    image: wingman:dev-container
+    container_name: wingman-dev-container
+    volumes:
+      - .:/app
+    tty: true
