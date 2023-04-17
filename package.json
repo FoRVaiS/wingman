@@ -1,7 +1,7 @@
 {
   "name": "wingman",
   "description": "Wingman is a Twitter clone and middleman service that aims to provide users with a similar experience to the official Twitter platform while giving them more control over their data and interactions.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog",
