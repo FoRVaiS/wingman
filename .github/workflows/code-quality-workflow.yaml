@@ -8,7 +8,7 @@ jobs:
       matrix:
         node-version: [18]
         task: [test:unit, test:e2e, lint]
-    jobs:
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
