@@ -20,34 +20,6 @@ While Wingman may not introduce any groundbreaking functionality, it was develop
  - **Deleting Tweets**: Users can delete their own tweets, which will no longer be visible to regular users. Admins and moderators can still view deleted tweets for review, but all interactions will be disabled.
  - **Downloading Attachments**: Users can download attachments from a tweet.
 
-## Technology Stack
-### Frontend
- - HTML/CSS/JavaScript
- - React.js
- - TypeScript
-### Backend
- - Node.js
- - Express.js
- - TypeScript
- - Winston
- - MongoDB
- - TypeORM
-### Scraping
- - Playwright (for data scraping and user authentication)
- - FFMPEG (for converting HLS streams into mp4)
-### File Storage
- - Local
- - TrueNAS
-### Testing
- - Jest
- - Ts-jest
- - React-testing-library
-### Code Quality
- - Typescript-eslint
- - Eslint
-### Deployment
- - Docker
-
 ## Roadmap
 For a detailed roadmap of the project, please refer to the pinned [Timeline issue](https://github.com/FoRVaiS/Wingman/issues/1).
 
