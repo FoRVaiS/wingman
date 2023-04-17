@@ -22,7 +22,7 @@
     "ts-jest": "^29.1.0"
   },
   "scripts": {
-    "install": "./scripts/propagate.sh npm install",
+    "install-deps": "./scripts/propagate.sh npm install",
     "lint": "eslint .",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "jest --passWithNoTests --testMatch **/*.unit.ts",
