@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18]
-        task: [test:unit, test:e2e, lint]
+        task: ['test:unit', 'test:e2e', 'lint']
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
