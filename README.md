@@ -60,7 +60,7 @@ MINOR: incremented for backwards-compatible changes in the API
 PATCH: incremented for backwards-compatible bug fixes
 ```
 
-All versions with major version 0 and below are considered unstable and are expected to have breaking changes in minor or patch bumps. Once the project reaches version 1.0.0, any breaking changes will be indicated by a major version bump.
+All versions before v1.0.0 are considered unstable and are expected to have breaking changes in minor or patch bumps. Once the project reaches version 1.0.0, any breaking changes will be indicated by a major version bump.
 
 For more information about semver, see https://semver.org/.
 
