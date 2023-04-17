@@ -1,0 +1,22 @@
+name: Code Quality Workflow
+description: Workflow for running tests and linting
+on: [pull_request]
+jobs:
+  code-quality:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node-version: [18]
+        task: [test:unit, test:e2e, lint, lint:all]
+    jobs:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-${{ matrix.node-version }}-
+      - run: npm ci
+      - run: npm run ${{ matrix.task }}
