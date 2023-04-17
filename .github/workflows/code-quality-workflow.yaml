@@ -1,6 +1,6 @@
 name: Code Quality Workflow
 description: Workflow for running tests and linting
-on: [pull_request]
+on: pull_request
 jobs:
   code-quality:
     runs-on: ubuntu-22.04
