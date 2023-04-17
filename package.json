@@ -23,10 +23,9 @@
   },
   "scripts": {
     "install": "./scripts/propagate.sh npm install",
-    "lint": "./scripts/propagate.sh npm run lint",
-    "lint:all": "./scripts/propagate.sh npm run lint:all",
+    "lint": "eslint .",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "./scripts/propagate.sh npm run test:unit",
-    "test:e2e": "./scripts/propagate.sh npm run test:e2e"
+    "test:unit": "jest --passWithNoTests --testMatch **/*.unit.ts",
+    "test:e2e": "jest --passWithNoTests --testMatch **/*.e2e.ts"
   }
 }
