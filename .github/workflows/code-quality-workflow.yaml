@@ -1,5 +1,4 @@
 name: Code Quality Workflow
-description: Workflow for running tests and linting
 on: pull_request
 jobs:
   code-quality:
